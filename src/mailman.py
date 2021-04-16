@@ -38,7 +38,7 @@ def send_mail(smtp_obj, subj: str, to: tuple, frm: str, msg: str) -> int:
 
     body = (
         ("Subject: " + subj + "\n").encode()
-        + ("To: " + ",".join(to) + "\n").encode()
+        + ("To: " + ", ".join(to) + "\n").encode()
         + ("From: " + frm + "\n\n").encode()
         + (msg + "\n").encode()
     )
